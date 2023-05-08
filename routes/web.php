@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::redirect('/', '/routing');
+Route::redirect('/', '/routing')->name('home');
 
 Route::get('/routing', function () {
     return view('routing');
@@ -66,4 +66,14 @@ Route::prefix('admin')->name('admin.')->group(function() {
         return "This is item data on admin page";
     })->name('items');
 });
+
+// Route for bootstrap clone
+
+// using closure function
+//Route::get('/bootstrap', function() {
+//    return view('bootstrap-clone');
+//})->name('bootstrap');
+
+// using controller
+Route::get('/bootstrap', [RouteController::class, 'bootstrap'])->name('bootstrap');
 

@@ -15,4 +15,9 @@ class RouteController extends Controller
     {
         return "This is Profile from Controller, profile id: ".$profileId;
     }
+
+    public function bootstrap()
+    {
+        return view('bootstrap-clone');
+    }
 }
