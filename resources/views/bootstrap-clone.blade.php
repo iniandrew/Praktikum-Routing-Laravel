@@ -51,19 +51,19 @@
                 <!-- Top Menu -->
                 <ul class="navbar-nav flex-row flex-wrap">
                     <li class="nav-item col-6 col-md-auto">
-                        <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" class="nav-link active">Docs</a>
+                        <a href="{{ url('https://getbootstrap.com/docs/5.3/getting-started/introduction/') }}" class="nav-link active">Docs</a>
                     </li>
                     <li class="nav-item col-6 col-md-auto">
-                        <a href="https://getbootstrap.com/docs/5.3/examples/" class="nav-link">Examples</a>
+                        <a href="{{ url('https://getbootstrap.com/docs/5.3/examples/') }}" class="nav-link">Examples</a>
                     </li>
                     <li class="nav-item col-6 col-md-auto">
-                        <a href="https://icons.getbootstrap.com/" class="nav-link">Icons</a>
+                        <a href="{{ url('https://icons.getbootstrap.com/') }}" class="nav-link">Icons</a>
                     </li>
                     <li class="nav-item col-6 col-md-auto">
-                        <a href="https://themes.getbootstrap.com/" class="nav-link">Themes</a>
+                        <a href="{{ url('https://themes.getbootstrap.com/') }}" class="nav-link">Themes</a>
                     </li>
                     <li class="nav-item col-6 col-md-auto">
-                        <a href="https://blog.getbootstrap.com/" class="nav-link">Blog</a>
+                        <a href="{{ url('https://blog.getbootstrap.com/') }}" class="nav-link">Blog</a>
                     </li>
                 </ul>
                 <hr class="d-md-none text-white-50"/>
@@ -367,43 +367,43 @@
             >
                 <h5>Links</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#">Home</a></li>
-                    <li class="mb-2"><a href="#">Docs</a></li>
-                    <li class="mb-2"><a href="#">Examples</a></li>
-                    <li class="mb-2"><a href="#">Icons</a></li>
-                    <li class="mb-2"><a href="#">Themes</a></li>
-                    <li class="mb-2"><a href="#">Blog</a></li>
-                    <li class="mb-2"><a href="#">Swag Store</a></li>
+                    <li class="mb-2"><a href="{{ url('https://getbootstrap.com/') }}">Home</a></li>
+                    <li class="mb-2"><a href="{{ url('https://getbootstrap.com/docs/5.3/getting-started/introduction/') }}">Docs</a></li>
+                    <li class="mb-2"><a href="{{ url('https://getbootstrap.com/docs/5.3/examples/') }}">Examples</a></li>
+                    <li class="mb-2"><a href="{{ url('https://icons.getbootstrap.com/') }}">Icons</a></li>
+                    <li class="mb-2"><a href="{{ url('https://themes.getbootstrap.com/') }}">Themes</a></li>
+                    <li class="mb-2"><a href="{{ url('https://blog.getbootstrap.com/') }}">Blog</a></li>
+                    <li class="mb-2"><a href="{{ url('https://cottonbureau.com/people/bootstrap') }}">Swag Store</a></li>
                 </ul>
             </div>
             <div class="col-6 col-lg-2 mb-5">
                 <h5>Guides</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#">Getting started</a></li>
-                    <li class="mb-2"><a href="#">Starter template</a></li>
-                    <li class="mb-2"><a href="#">Webpack</a></li>
-                    <li class="mb-2"><a href="#">Parcel</a></li>
+                    <li class="mb-2"><a href="{{ url('https://getbootstrap.com/docs/5.3/getting-started/introduction/') }}">Getting started</a></li>
+                    <li class="mb-2"><a href="{{ url('https://getbootstrap.com/docs/5.3/examples/starter-template/') }}">Starter template</a></li>
+                    <li class="mb-2"><a href="{{ url('https://getbootstrap.com/docs/5.3/getting-started/webpack/') }}">Webpack</a></li>
+                    <li class="mb-2"><a href="{{ url('https://getbootstrap.com/docs/5.3/getting-started/parcel/') }}">Parcel</a></li>
+                    <li class="mb-2"><a href="{{ url('https://getbootstrap.com/docs/5.3/getting-started/vite/') }}">Vite</a></li>
                 </ul>
             </div>
             <div class="col-6 col-lg-2 mb-5">
                 <h5>Projects</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#">Bootstrap 5</a></li>
-                    <li class="mb-2"><a href="#">Bootstrap 4</a></li>
-                    <li class="mb-2"><a href="#">Icons</a></li>
-                    <li class="mb-2"><a href="#">RFS</a></li>
-                    <li class="mb-2"><a href="#">npm starter</a></li>
+                    <li class="mb-2"><a href="{{ url('https://github.com/twbs/bootstrap') }}">Bootstrap 5</a></li>
+                    <li class="mb-2"><a href="{{ url('https://github.com/twbs/bootstrap/tree/v4-dev') }}">Bootstrap 4</a></li>
+                    <li class="mb-2"><a href="{{ url('https://github.com/twbs/icons') }}">Icons</a></li>
+                    <li class="mb-2"><a href="{{ url('https://github.com/twbs/rfs') }}">RFS</a></li>
+                    <li class="mb-2"><a href="{{ url('https://github.com/twbs/examples/') }}">Examples repo</a></li>
                 </ul>
             </div>
             <div class="col-6 col-lg-2 mb-5">
                 <h5>Community</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#">Issues</a></li>
-                    <li class="mb-2"><a href="#">Discussions</a></li>
-                    <li class="mb-2"><a href="#">Corporate sponsors</a></li>
-                    <li class="mb-2"><a href="#">Open Collective</a></li>
-                    <li class="mb-2"><a href="#">Slack</a></li>
-                    <li class="mb-2"><a href="#">Stack overflow</a></li>
+                    <li class="mb-2"><a href="{{ url('https://github.com/twbs/bootstrap/issues') }}">Issues</a></li>
+                    <li class="mb-2"><a href="{{ url('https://github.com/orgs/twbs/discussions') }}">Discussions</a></li>
+                    <li class="mb-2"><a href="{{ url('https://github.com/sponsors/twbs') }}">Corporate sponsors</a></li>
+                    <li class="mb-2"><a href="{{ url('https://opencollective.com/bootstrap') }}">Open Collective</a></li>
+                    <li class="mb-2"><a href="{{ url('https://stackoverflow.com/questions/tagged/bootstrap-5') }}">Stack overflow</a></li>
                 </ul>
             </div>
         </div>
